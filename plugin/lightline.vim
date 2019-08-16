@@ -21,7 +21,7 @@ if has('autocmd')
       " Make current statusline/tabline more obvious by turning off/adjusting some features in non-current
       " statusline/tabline.
       if exists('*matchaddpos')
-        autocmd BufEnter,FocusGained,VimEnter,WinEnter * call lightline#dimfocus#focus_statusline()
+        autocmd FocusGained,WinEnter * call lightline#dimfocus#focus_statusline()
         autocmd FocusLost,WinLeave * call lightline#dimfocus#blur_statusline()
       endif
 

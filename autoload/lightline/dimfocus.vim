@@ -9,7 +9,7 @@ function! s:reaload_lightline() abort
   call lightline#update()
 endfunction
 
-let s:current_palette = deepcopy(get(g:, 'lightline#colorscheme#' . lightline.colorscheme . '#palette')) 
+let s:current_palette = deepcopy(get(g:, 'lightline#colorscheme#' . g:lightline.colorscheme . '#palette')) 
 let s:dimfocus = get(g:, 'lightline#dimfocus#blur', s:current_palette)
 
 function! lightline#dimfocus#focus_statusline() abort
