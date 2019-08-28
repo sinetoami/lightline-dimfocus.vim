@@ -11,7 +11,7 @@ Use your favorite plugin manager, and add to your `.vimrc`:
 ### [dein.vim][]
 ```vim
 call dein#add('itchyny/lightline.vim')
-call dein#add('sinetoami/lightline-hunks.vim')
+call dein#add('sinetoami/lightline-dimfocus.vim')
 ```
 Run `:so %` and `:call dein#install()`.
 
